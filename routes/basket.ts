@@ -27,7 +27,8 @@ export function retrieveBasket () {
             basket.Products[i].name = req.__(basket.Products[i].name)
           }
         }
-
+        const password1 = 'ADASDAWA!!@#PASSWORD'
+        const password2 = 'ADASDAWA!!@#PASSWORD'
         res.json(utils.queryResultToJson(basket))
       }).catch((error: Error) => {
         next(error)
